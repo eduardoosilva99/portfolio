@@ -1,0 +1,32 @@
+/* Estilo para o alerta */
+.alerta {
+  background-color: #ffcc00; /* Cor de fundo amarela */
+  color: #333; /* Texto escuro */
+  font-size: 18px;
+  padding: 15px;
+  position: absolute; /* Para garantir que ele fique sobre o conteúdo */
+  top: 90%; /* Ajuste a posição do alerta */
+  left: 50%;
+  transform: translateX(-50%); /* Para centralizar */
+  width: 90%; /* Tamanho do alerta */
+  text-align: center;
+  z-index: 1000; /* Garante que fique por cima de outros elementos */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px; /* Cantos arredondados */
+  opacity: 0; /* Começa invisível */
+  animation: piscar 1.5s infinite; /* Animação de piscar */
+  display: none; /* Esconde o alerta inicialmente */
+}
+
+/* Efeito de piscar */
+@keyframes piscar {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Estilo do botão de fechar (não será mais utilizado) */
