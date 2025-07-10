@@ -2,13 +2,14 @@
 .alerta {
   background-color: #ffcc00; /* Cor de fundo amarela */
   color: #333; /* Texto escuro */
-  font-size: 18px;
-  padding: 15px;
+  font-size: 18px; /* Tamanho da fonte */
+  border: 2px solid #ff9900; /* Borda laranja */
+  padding: 15px; /* Espaçamento interno */
   position: absolute; /* Para garantir que ele fique sobre o conteúdo */
-  top: 90%; /* Ajuste a posição do alerta */
-  left: 50%;
+  top: 50%; /* Ajuste a posição do alerta */
+  left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Para centralizar */
-  width: 90%; /* Tamanho do alerta */
+  width: 35%; /* Tamanho do alerta */
   text-align: center;
   z-index: 1000; /* Garante que fique por cima de outros elementos */
   font-family: Arial, sans-serif;
@@ -16,7 +17,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px; /* Cantos arredondados */
   opacity: 0; /* Começa invisível */
-  animation: piscar 1.5s infinite; /* Animação de piscar */
+  animation: piscar 3.5s infinite; /* Animação de piscar */
   display: none; /* Esconde o alerta inicialmente */
 }
 
@@ -30,3 +31,35 @@
 }
 
 /* Estilo do botão de fechar (não será mais utilizado) */
+
+/*body do meu portfolio*/
+#logo-body {
+  background-image: url('/images/3607424.jpg');
+  background-size: cover; /* Garante que a imagem cubra todo o fundo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
+  justify-content: center; /* Centraliza verticalmente */
+  font-family: 'Arial', sans-serif; /* Fonte do corpo */
+}
+
+/*Carrosel*/
+  .carousel-inner {
+    max-height: 1000px; /* ajuste conforme desejar */
+    max-width: 900px;
+    margin: auto; /* centraliza o carrossel */
+    overflow: hidden; /* esconde o conteúdo que ultrapassa o limite do carrossel */
+    border-radius: 5px; /* Cantos arredondados do carrossel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o carrossel */
+  
+
+  }
+
+  .carousel-inner img {
+    object-fit: cover;
+    width: 100%; /* Garante que a imagem ocupe toda a largura do carrossel */
+    height: 100%; /* Garante que a imagem ocupe toda a altura do carrossel */
+    border-radius: 10px; /* Cantos arredondados das imagens */   
+  }
+

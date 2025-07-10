@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "PKief.material-icon-theme",
+    "rocketseat.theme-omni",
+    "ritwickdey.LiveServer"
+  ]
+}
+// Add the extensions you want to recommend to your workspace here
+// To learn more about workspace recommendations, please visit:
