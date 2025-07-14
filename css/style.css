@@ -34,7 +34,7 @@
 
 /*body do meu portfolio*/
 #logo-body {
-  background-image: url('/images/3607424.jpg');
+  background-image: url('/eduardoosilva99.github.io-/images/3607424.jpg'); /* Imagem de fundo do corpo */
   background-size: cover; /* Garante que a imagem cubra todo o fundo */
   background-position: center; /* Centraliza a imagem de fundo */
   background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
@@ -47,7 +47,7 @@
 /*Carrosel*/
   .carousel-inner {
     max-height: 1000px; /* ajuste conforme desejar */
-    max-width: 900px;
+    max-width: 900px; /* ajuste conforme desejar */
     margin: auto; /* centraliza o carrossel */
     overflow: hidden; /* esconde o conteúdo que ultrapassa o limite do carrossel */
     border-radius: 5px; /* Cantos arredondados do carrossel */
@@ -60,6 +60,6 @@
     object-fit: cover;
     width: 100%; /* Garante que a imagem ocupe toda a largura do carrossel */
     height: 100%; /* Garante que a imagem ocupe toda a altura do carrossel */
-    border-radius: 10px; /* Cantos arredondados das imagens */   
+    border-radius: 5px; /* Cantos arredondados das imagens */   
   }
 
