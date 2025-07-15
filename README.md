@@ -42,9 +42,9 @@ O site foi construído com HTML, CSS e JavaScript/React.
 
 ### 📸 Prévia
 
-![preview](./screenshot.png)  
-> *Adicione um print do seu site aqui se quiser!*
-
+<p align="center">
+  <img alt="projeto DevLinks" src="images/portfolio.jpg" width="90%">
+</p>
 ---
 
 Obrigado por visitar meu portfólio!  
