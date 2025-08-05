@@ -6,13 +6,6 @@ Aqui você encontrará alguns dos meus projetos pessoais e profissionais desenvo
 🌐 Acesse meu portfólio online:  
 👉 <a href="https://eduardoosilva99.github.io/portfolio" id="portfolio-link">Visite meu portfólio!</a>
 
-<script>
-  document.getElementById('portfolio-link').addEventListener('click', function(event) {
-    window.open('https://eduardoosilva99.github.io/portfolio', '_blank');
-    event.preventDefault(); // Previne o comportamento padrão do link
-  });
-</script>
-
 ## 🧑‍💻 Sobre mim
 
 - 💻 Formado em Sistemas de Informação  
