@@ -39,7 +39,7 @@ Aqui você encontrará alguns dos meus projetos pessoais e profissionais desenvo
 ## 📸 Prévia
 
 <p align="center">
-  <img alt="Prévia do portfólio" src="images/portfolio.jpg" width="90%">
+  <img alt="Prévia do portfólio" src="images/port.jpg" width="90%">
 </p>
 
 ---
