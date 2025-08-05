@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
   alerta.style.opacity = 2; // Garante que o alerta esteja visível
 
   // Após 6 segundos, o alerta desaparecerá automaticamente
-  setTimeout(function() {
-    alerta.style.display = 'none';  // Esconde o alerta
-  }, 6000);  // 6000 milissegundos = 6 segundos (tempo total do piscar)
+  //setTimeout(function() {
+    //alerta.style.display = 'none';  // Esconde o alerta
+  //}, 60000);  // 6000 milissegundos = 6 segundos (tempo total do piscar)
 });
 
 
