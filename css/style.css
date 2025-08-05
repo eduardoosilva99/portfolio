@@ -1,20 +1,26 @@
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove margens e preenchimentos padrão */
+}
+
 /* Estilo para o alerta */
 .alerta {
   background-color: #ffcc00; /* Cor de fundo amarela */
   color: #333; /* Texto escuro */
   font-size: 18px; /* Tamanho da fonte */
   border: 2px solid #ff9900; /* Borda laranja */
-  padding: 15px; /* Espaçamento interno */
+  padding: 10px; /* Espaçamento interno */
   position: absolute; /* Para garantir que ele fique sobre o conteúdo */
-  top: 50%; /* Ajuste a posição do alerta */
+  top: 60%; /* Ajuste a posição do alerta */
   left: 50%; /* Centraliza horizontalmente */
   transform: translateX(-50%); /* Para centralizar */
   width: 35%; /* Tamanho do alerta */
-  text-align: center;
+  text-align: center; /* Centraliza o texto */
   z-index: 1000; /* Garante que fique por cima de outros elementos */
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif; /* Fonte do alerta */
+  font-weight: bold; /* Negrito */
+  line-height: 1.0; /* Espaçamento entre linhas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o alerta */
   border-radius: 5px; /* Cantos arredondados */
   opacity: 0; /* Começa invisível */
   animation: piscar 3.5s infinite; /* Animação de piscar */
@@ -41,7 +47,6 @@
   background-repeat: no-repeat; /* Evita que a imagem se repita */
   height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
   justify-content: center; /* Centraliza verticalmente */
-  font-family: 'Arial', sans-serif; /* Fonte do corpo */
 }
 
 /*Carrosel*/
@@ -52,7 +57,7 @@
     overflow: hidden; /* esconde o conteúdo que ultrapassa o limite do carrossel */
     border-radius: 5px; /* Cantos arredondados do carrossel */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o carrossel */
-  
+    margin-bottom:50px;
 
   }
 
@@ -63,3 +68,15 @@
     border-radius: 5px; /* Cantos arredondados das imagens */   
   }
 
+   
+/* Teia */
+#teia {
+  position: fixed; /* Fixa a teia na tela */
+  top: 0; /* Posiciona no canto superior esquerdo */
+  left: 0; /* Posiciona no canto superior esquerdo */
+  width: 100%; /* Ocupa toda a largura */
+  height: 100%; /* Ocupa toda a tela */
+  z-index: -1; /* Fica no fundo */
+  pointer-events: none; /* Deixa os cliques passarem */
+  background: transparent; /* Fundo transparente */
+}

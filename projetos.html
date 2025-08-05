@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sobre - Eduardo Silva</title>
+
+    <!-- Bootstrap 5.3.7 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+
+    <!-- CSS e JS personalizados -->
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="./js/javascript.js" defer></script>
+</head>
+
+<body id="logo-body" class="bg-dark text-white">
+
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Cabeçalho -->
+    <header class="text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Meu Projetos</h1>
+            <h2>Desenvolvedor Front-End | HTML • CSS • Bootstrap • JavaScript</h2>
+            <p>🚀 Apaixonado por tecnologia, com foco em me tornar um desenvolvedor full stack</p>
+
+            <!-- Experiência Profissional -->
+            <h3 class="mt-5"></h3>
+            <p>Atualmente, estou em busca de uma oportunidade como desenvolvedor front-end, onde posso aplicar minhas
+                habilidades em HTML, CSS, JavaScript e Bootstrap.</p>
+        </div>
+    </header>
+
+     <!-- Carrossel de Projetos -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://github.com/eduardoosilva99/primeiroprojeto" target="_blank">
+                    <img class="d-block w-100"
+                        src="/images/6983338-abstract-modern-tech-of-programming-code-screen-developer-foto.jpg"
+                        alt="Imagem do Projeto 1">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Projeto 1</h5>
+                    <p>Descrição do projeto 1. Um projeto incrível que mostra minhas habilidades em front-end.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://github.com/eduardoosilva99/python" target="_blank">
+                    <img class="d-block w-100" src="/images/code-5113374_1280.jpg" alt="Imagem do Projeto 2">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Projeto 2</h5>
+                    <p>Descrição do projeto 2. Um projeto incrível que mostra minhas habilidades em front-end.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://github.com/eduardoosilva99/barbeariaok" target="_blank">
+                    <img class="d-block w-100" src="/images/projetos-em-javascript.jpg.webp" alt="Imagem do Projeto 3">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Projeto 3</h5>
+                    <p>Descrição do projeto 3. Um projeto incrível que mostra minhas habilidades em front-end.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+
+        <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">© <span id="ano-atual"></span> Eduardo Silva. Todos os direitos reservados.</p>
+            <p class="mb-0">Desenvolvido com 💙 por Eduardo Silva</p>
+            <p class="mb-0">Este site é um portfólio pessoal e não está vinculado a nenhuma empresa.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
