@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio online!
 Aqui você encontrará alguns dos meus projetos pessoais e profissionais desenvolvidos com foco em **desenvolvimento web**, **React**, e outras tecnologias modernas.
 
 🌐 Acesse meu portfólio online:  
-👉 <a href="https://eduardoosilva99.github.io/portfolio" id="portfolio-link">Visite meu portfólio!</a>
+👉 <a href="https://eduardoosilva99.github.io/portfolio/" id="portfolio-link">Visite meu portfólio!</a>
 
 ## 🧑‍💻 Sobre mim
 
