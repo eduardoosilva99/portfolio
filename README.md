@@ -8,8 +8,8 @@ Aqui você encontrará alguns dos meus projetos pessoais e profissionais desenvo
 
 ## 🧑‍💻 Sobre mim
 
-- 💻 Formado em Sistemas de Informação  
-- 📍 Baseado no Brasil  
+- 💻 Formado em Sistema de Informação  
+- 📍 Bacharelado no Brasil  
 - 🚀 Apaixonado por tecnologia, com foco em me tornar um **desenvolvedor full stack**  
 - 💡 Gosto de transformar ideias em soluções reais através da programação  
 - 📚 Estudando constantemente tecnologias como **React**, **JavaScript**, **TypeScript**, **PHP**, **MySQL**, **Python**, **Java** e **Power BI**
