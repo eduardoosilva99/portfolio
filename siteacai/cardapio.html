@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="O melhor açaí da cidade. Combinações deliciosas, ingredientes naturais e muito sabor.">
+  <meta name="keywords" content="açaí, açai,AÇAÍ DO BOB, sobremesa, frutas">
+  <title>AÇAÍ DO BOB</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/download.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Menu principal">
+    <div class="container">
+      <a class="nav-link" href="#home"><img src="img/download.jpeg" alt="Logo Açai do Bob" width="40" height="40"
+          style="border-radius: 20px;"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
+          <li class="nav-item"><a class="nav-link" href="facapedido.html">Faça seu Pedido</a></li>
+          <li class="nav-item"><a class="nav-link" href="faleconosco.html"
+              style="background: rgb(54, 17, 88); border-radius: 5px;">Fale Conosco</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="cardapio" class="p-5">
+    <h2 class="text-center mb-5">Cardápio</h2>
+
+    <div class="row g-4 justify-content-center text-center">
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/18321206229eh5h9e41g.jpeg" class="card-img-top" alt="Açaí Tradicional">
+          <div class="card-body">
+            <h5 class="card-title">Açaí Tradicional</h5>
+            <p class="card-text">150ml de açaí puro, granola e banana.</p>
+            <p class="card-text">
+              <span class="preco">R$ 12,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí Tradicional" data-preco="12.00">
+              🛒
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/1544230625aeub9l73td.png" class="card-img-top" alt="Açaí com Frutas">
+          <div class="card-body">
+            <h5 class="card-title">Açaí com Frutas</h5>
+            <p class="card-text">200ml de açaí com frutas frescas.</p>
+            <p class="card-text">
+              <span class="preco">R$ 15,00</span>
+            </p>
+
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí Tradicional" data-preco="15.00">
+              🛒
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/18321206229eh5h9e41g.jpeg" class="card-img-top" alt="Açaí Especial">
+          <div class="card-body">
+            <h5 class="card-title">Açaí Especial</h5>
+            <p class="card-text">250ml de açaí com frutas frescas.</p>
+            <p class="card-text">
+              <span class="preco">R$ 18,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí Especial - 250ml" data-preco="18.00">
+              🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/1710180924kibgbije36.jpeg" class="card-img-top" alt="Açaí Tradicional">
+          <div class="card-body">
+            <h5 class="card-title">Açaí Tradicional</h5>
+            <p class="card-text">300ml de açaí puro, granola e banana.</p>
+            <p class="card-text">
+              <span class="preco">R$ 20,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí Tradicional - 300ml"
+              data-preco="20.00">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/1544230625aeub9l73td.png" class="card-img-top" alt="Açaí com Frutas">
+          <div class="card-body">
+            <h5 class="card-title">Açaí com Frutas</h5>
+            <p class="card-text">400ml de açaí com frutas frescas.</p>
+            <p class="card-text">
+              <span class="preco">R$ 22,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí com Frutas - 400ml"
+              data-preco="22.00">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100"></div> <!-- quebra de linha -->
+
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/1710180924kibgbije36.jpeg" class="card-img-top" alt="Açaí Especial">
+          <div class="card-body">
+            <h5 class="card-title">Açaí Especial</h5>
+            <p class="card-text">500ml de açaí com frutas frescas.</p>
+            <p class="card-text">
+              <span class="preco">R$ 25,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí Especial - 500ml" data-preco="25.00">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/1544230625aeub9l73td.png" class="card-img-top" alt="Açaí Tradicional">
+          <div class="card-body">
+            <h5 class="card-title">Açaí Tradicional</h5>
+            <p class="card-text">700ml de açaí puro, granola e banana.</p>
+            <p class="card-text">
+              <span class="preco">R$ 30,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí Tradicional - 700ml"
+              data-preco="30.00">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/18321206229eh5h9e41g.jpeg" class="card-img-top" alt="Açaí com Frutas">
+          <div class="card-body">
+            <h5 class="card-title">Açaí com Frutas</h5>
+            <p class="card-text">1L de açaí com frutas <br>frescas.</p>
+            <p class="card-text">
+              <span class="preco">R$ 40,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí com Frutas - 1L" data-preco="40.00">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/1710180924kibgbije36.jpeg" class="card-img-top" alt="Açaí Especial">
+          <div class="card-body">
+            <h5 class="card-title">Açaí Especial</h5>
+            <p class="card-text">1,5L de açaí com frutas frescas.</p>
+            <p class="card-text">
+              <span class="preco">R$ 50,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí Especial - 1,5L" data-preco="50.00">🛒</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-2">
+        <div class="card h-100">
+          <img src="img/1544230625aeub9l73td.png" class="card-img-top" alt="Açaí Tradicional">
+          <div class="card-body">
+            <h5 class="card-title">Açaí Tradicional</h5>
+            <p class="card-text">2L de açaí com frutas <br>frescas.</p>
+            <p class="card-text">
+              <span class="preco">R$ 65,00</span>
+            </p>
+            <button class="btn btn-acai comprar-btn" data-produto="Açaí Tradicional - 2L" data-preco="65.00">🛒</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalProduto" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="produto-nome"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body d-flex align-items-start gap-3">
+
+            <!-- Imagem -->
+            <div class="modal-img">
+              <img src="img/18321206229eh5h9e41g.jpeg" alt="Imagem do produto selecionado" class="img-fluid"
+                style="max-width:150px;">
+            </div>
+
+            <!-- Informações -->
+            <div class="modal-info flex-grow-1">
+
+              <!-- Quantidade -->
+              <div class="mb-2">
+                <label for="quantidade" class="form-label">Quantidade</label>
+                <input type="number" id="quantidade" class="form-control" min="1" value="1">
+              </div>
+
+              <!-- Tamanho -->
+              <div class="mb-2">
+                <label for="tamanho" class="form-label">Tamanho</label>
+                <select id="tamanho" class="form-select">
+                  <option value="0">Padrão</option>
+                  <option value="5">Médio (+R$5)</option>
+                  <option value="10">Grande (+R$10)</option>
+                </select>
+              </div>
+
+              <!-- Extras -->
+              <fieldset class="mb-2">
+                <legend class="form-label">Extras</legend>
+
+                <div class="form-check">
+                  <input class="form-check-input extra" type="checkbox" id="extra-leite" value="3">
+                  <label class="form-check-label" for="extra-leite">Leite em pó (+R$3)</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input extra" type="checkbox" id="extra-morango" value="5">
+                  <label class="form-check-label" for="extra-morango">Morango (+R$5)</label>
+                </div>
+
+                <div class="form-check">
+                  <input class="form-check-input extra" type="checkbox" id="extra-pacoca" value="2">
+                  <label class="form-check-label" for="extra-pacoca">Paçoca (+R$2)</label>
+                </div>
+              </fieldset>
+
+              <h5>Total: R$ <span id="totalModal">0.00</span></h5>
+
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button id="btnFinalizarPedido" type="button" class="btn btn-acai w-100">
+              Finalizar Pedido
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <!-- Sobre -->
+        <div class="col-md-2 mb-2">
+          <h5>AÇAÍ DO BOB</h5>
+          <p>O melhor açaí da cidade, feito com ingredientes naturais e muito sabor.</p>
+        </div>
+
+        <!-- Links -->
+        <div class="col-md-2 mb-2">
+          <h5>Links rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="cardapio.html" class="text-light text-decoration-none">Cardápio</a></li>
+            <li><a href="facapedido.html" class="text-light text-decoration-none">Faça seu pedido</a></li>
+            <li><a href="faleconosco.html" class="text-light text-decoration-none">Fale conosco</a></li>
+          </ul>
+        </div>
+
+
+        <!-- Redes Sociais -->
+        <div class="col-md-2 mb-2">
+          <h5>Redes Sociais</h5>
+          <ul class="list-unstyled text-center d-flex gap-3">
+            <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
+                  class="app-modal-icon__icon-image"
+                  srcset="https://img.icons8.com/?size=48&amp;id=uLWV5A9vXIPu&amp;format=png 1x, https://img.icons8.com/?size=96&amp;id=uLWV5A9vXIPu&amp;format=png 2x"
+                  alt="Facebook Novo" width="40" height="40"></a></li>
+            <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
+                  class="app-modal-icon__icon-image"
+                  srcset="https://img.icons8.com/?size=48&amp;id=Xy10Jcu1L2Su&amp;format=png 1x, https://img.icons8.com/?size=96&amp;id=Xy10Jcu1L2Su&amp;format=png 2x"
+                  alt="Instagram" width="40" height="40"></a></li>
+            <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
+                  class="app-modal-icon__icon-image"
+                  srcset="https://img.icons8.com/?size=50&amp;id=phOKFKYpe00C&amp;format=png 1x, https://img.icons8.com/?size=100&amp;id=phOKFKYpe00C&amp;format=png 2x"
+                  alt="Twitter" width="40" height="40"></a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="col-md-3 mb-2">
+          <h5>Contato</h5>
+          <p>📍 Sq16, quadra 05 Loja 54 - D - Centro, Cidade Ocidental - GO, 72880-594</p>
+          <p>📞 (11) 99999-9999</p>
+          <p>📧 contato@meuacai.com</p>
+        </div>
+
+        <!-- Voltar ao topo -->
+        <button id="backToTop" class="btn btn-primary" title="Voltar ao topo">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+
+      </div>
+
+      <hr class="border-light">
+
+      <!-- Copyright -->
+      <div class="text-center pb-3" style="color: white;">
+        <p class="mb-0">© <span id="ano-atual"></span> Eduardo Silva. Todos os direitos reservados.</p>
+        <p class="mb-0">Desenvolvido com 💙 por Eduardo Silva</p>
+        <p class="mb-0">Este site é pessoal e não está vinculado a nenhuma empresa.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Seu JS -->
+  <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

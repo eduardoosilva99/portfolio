@@ -16,7 +16,7 @@
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -28,27 +28,19 @@
 <body id="logo-body">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Eduardo Silva</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Eduardo Silva</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projetos.html">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
                 </ul>
             </div>
         </div>
@@ -58,13 +50,12 @@
     <header class="text-white text-center py-5">
         <div class="container">
             <!-- Foto de perfil -->
-            <img src="images/perfil.jfif" alt="Foto minha Eduardo Silva" class="rounded-circle mb-3" width="250"
-
+            <img src="img/perfil.jfif" alt="Foto minha Eduardo Silva" class="rounded-circle mb-3" width="250"
                 height="250" style="object-fit: cover; border: 4px solid white;">
             <h1 class="display-4">Eduardo Silva</h1>
             <p class="lead">Desenvolvedor Front-End | HTML • CSS • Bootstrap • JavaScript</p>
             <p>🚀 Apaixonado por tecnologia, com foco em me tornar um desenvolvedor full stack</p>
-            
+
         </div>
 
         <div id="alerta" class="alerta">
@@ -73,50 +64,53 @@
     </header>
 
     <section class="py-5 text-light">
-  <div class="container text-center">
-    <h2 class="mb-4">Bem-vindo ao meu portfólio 👋</h2>
-    <p class="mb-5">Sou um desenvolvedor front-end dedicado a criar interfaces modernas e funcionais.<br>
-      Aqui você encontrará um pouco sobre mim, meus projetos e como entrar em contato.</p>
+        <div class="container text-center">
+            <h2 class="mb-4">Bem-vindo ao meu portfólio 👋</h2>
+            <p class="mb-5">Sou um desenvolvedor front-end dedicado a criar interfaces modernas e funcionais.<br>
+                Aqui você encontrará um pouco sobre mim, meus projetos e como entrar em contato.</p>
 
-    <div class="row">
-      <!-- SOBRE -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-dark text-white">
-          <div class="card-body">
-            <h5 class="card-title">Sobre Mim</h5>
-            <p class="card-text">Conheça minha trajetória, minhas habilidades e minha paixão por desenvolvimento.</p>
-            <a href="sobre.html" class="btn btn-outline-primary">Ler mais</a>
-          </div>
+            <div class="row">
+                <!-- SOBRE -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Sobre Mim</h5>
+                            <p class="card-text">Conheça minha trajetória, minhas habilidades e minha paixão por
+                                desenvolvimento.</p>
+                            <a href="sobre.html" class="btn btn-outline-primary">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJETOS -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Projetos</h5>
+                            <p class="card-text">Veja alguns dos trabalhos que desenvolvi usando HTML, CSS, JavaScript e
+                                mais.</p>
+                            <a href="projetos.html" class="btn btn-outline-primary">Ver projetos</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- CONTATO -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-dark text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Contato</h5>
+                            <p class="card-text">Quer conversar? Veja como entrar em contato comigo pelas redes ou por
+                                e-mail.</p>
+                            <a href="contato.html" class="btn btn-outline-primary">Fale comigo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- PROJETOS -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 bg-dark text-white">
-          <div class="card-body">
-            <h5 class="card-title">Projetos</h5>
-            <p class="card-text">Veja alguns dos trabalhos que desenvolvi usando HTML, CSS, JavaScript e mais.</p>
-            <a href="projetos.html" class="btn btn-outline-primary">Ver projetos</a>
-          </div>
-        </div>
-
-      </div>
-      <!-- CONTATO -->
-      <div class="col-md-4 mb-4">
-       <div class="card h-100 bg-dark text-white">
-          <div class="card-body">
-            <h5 class="card-title">Contato</h5>
-            <p class="card-text">Quer conversar? Veja como entrar em contato comigo pelas redes ou por e-mail.</p>
-            <a href="contato.html" class="btn btn-outline-primary">Fale comigo</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
-       <!-- Rodapé -->
+    <!-- Rodapé -->
     <footer class="bg-dark text-white text-center py-3">
         <div class="container">
             <p class="mb-0">© <span id="ano-atual"></span> Eduardo Silva. Todos os direitos reservados.</p>

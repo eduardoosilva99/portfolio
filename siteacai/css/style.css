@@ -1,0 +1,220 @@
+/* ===== Fonte Poppins ===== */
+body {
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(222, 222, 222) !important;
+}
+
+/* Navbar roxo */
+.navbar.bg-primary {
+  background-color: #6f2da8 !important;
+}
+
+
+
+/* Links da navbar */
+.navbar .nav-link {
+  color: #fff !important;
+  /* Cor padrão */
+  transition: all 0.3s ease;
+  /* Transição suave para cor e fundo */
+  position: relative;
+  /* Para efeitos adicionais */
+  padding: 5px 15px;
+}
+
+/* Efeito quando o mouse passa */
+.navbar .nav-link:hover {
+  color: #fff !important;
+  /* Cor do texto */
+  background-color: #9402fc;
+  /* Fundo roxo suave */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  transform: scale(1.10);
+  /* Leve aumento */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra leve */
+}
+
+/* Efeito quando clicado ou ativo */
+.navbar .nav-link:active {
+  color: #fff !important;
+  background-color: #4b0082;
+  /* Cor mais escura ao clicar */
+  transform: scale(0.95);
+  /* Leve “afundamento” */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  /* Sombra mais intensa */
+}
+
+/* Para link ativo (quando estiver na página correspondente) */
+.navbar .nav-link.active {
+  color: #fff !important;
+  background-color: #8a2be2;
+  /* Cor diferenciada */
+  border-radius: 5px;
+  /* Bordas arredondadas */
+}
+
+/* Footer roxo*/
+.footer {
+  background-color: #6f2da8;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #f3e6ff;
+}
+
+
+/* ===== Carrossel ===== */
+#carouselExampleIndicators {
+  max-width: 900px;
+  /* largura máxima do carrossel */
+  margin: auto auto 100px auto;
+  /* centraliza e adiciona       espaçamento */
+  border-radius: 9px;
+  /* cantos arredondados */
+  overflow: hidden;
+  /* evita que imagens escapem */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* sombra suave */
+}
+
+/* Imagens do carrossel */
+.carousel img {
+  height: 450px;
+  object-fit: cover;
+}
+
+/* ===== Seção Contato ===== */
+#contato {
+  background-color: #f8f9fa;
+}
+
+#contato button {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Footer roxo*/
+.footer {
+  background-color: #6f2da8;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/* Estilo do mapa */
+.map iframe {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Estilo para os preços em vermelho e negrito */
+.preco {
+  color: red;
+  font-weight: bold;
+}
+
+/* Estilo do botão de comprar */
+.btn-acai {
+  background-color: blueviolet;
+
+}
+
+.btn-acai {
+  background-color: blueviolet;
+  border: none;
+}
+
+.btn-acai:hover {
+  background-color: #ce1812;
+  padding: 5px 10px;
+}
+
+/* Estilo para a seção de quantidade */
+.quantidade {
+  display: block;
+  align-items: center;
+  gap: 3px;
+
+}
+
+.quantidade button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+.quantidade input {
+  width: 50px;
+  text-align: center;
+}
+
+/* Modal personalizado */
+#modalProduto {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.hidden {
+  display: none;
+}
+
+h5 span {
+  color: red;
+}
+
+/*Botão voltar ao topo */
+#backToTop {
+  margin-left: 280px;
+  margin-top: 50px;
+  background-color: #300e4f;
+  border: none;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+
+
+}
+
+#backToTop:hover {
+  background-color: #6f2da8;
+  transform: scale(1.1);
+}
+
+/* foto do produto na modal */
+.modal-body {
+  display: flex; /* usa flexbox */
+  align-items: flex-start;  /* alinha topo da imagem com topo das infos */
+  gap: 20px;  /* espaço entre imagem e infos */
+}
+
+.modal-img img {
+  max-width: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 50%;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.modal-info {
+  flex: 1;  /* ocupa o resto do espaço */
+}
