@@ -1,117 +1,125 @@
+/* =========================================================
+   RESET GLOBAL
+   ========================================================= */
 * {
-  margin: 0; /* Remove margens padrão */
-  padding: 0; /* Remove margens e preenchimentos padrão */
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilo padrão (para desktops) */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   ALERTA
+   ========================================================= */
 .alerta {
-  background-color: #ffcc00; /* Cor de fundo amarela */
-  color: #333; /* Texto escuro */
-  font-size: 18px; /* Tamanho da fonte */
-  border: 2px solid #ff9900; /* Borda laranja */
-  padding: 10px;  /* Espaçamento interno */
-  position: absolute; /* Posição absoluta */
-  top: 60%; /* Posicionado a 60% do topo */
-  left: 50%; /* Centraliza horizontalmente */
-  transform: translateX(-50%);  /* Centraliza horizontalmente */
-  width: 35%;       /* Largura fixa */
-  text-align: center; /* Centraliza o texto */
-  z-index: 1000;  /* Garante que fique acima de outros elementos */
-  font-family: Arial, sans-serif; /* Fonte legível */
-  font-weight: bold;  /* Texto em negrito */
-  line-height: 1.2; /* Espaçamento entre linhas */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  border-radius: 5px; /* Cantos arredondados */
-  opacity: 0; /* Inicialmente invisível */
-  animation: piscar 3.5s infinite;  /* Animação de piscar */
-  display: none;  /* Oculto por padrão */
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35%;
+
+  padding: 10px;
+  text-align: center;
+
+  background-color: #ffcc00;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+
+  border: 2px solid #ff9900;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  z-index: 1000;
+  opacity: 0;
+  display: none;
+
+  animation: piscar 3.5s infinite;
 }
 
-/* 📱 Telas pequenas (smartphones) */
-@media (max-width: 600px) {
-  .alerta {
-    width: 80%;         /* Ocupa mais espaço na tela */
-    font-size: 16px;    /* Texto um pouco menor */
-    padding: 12px;      /* Mais espaço interno */
-    top: 65%;           /* Reposiciona melhor */
-    left: 50%;         /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza vertical e horizontal */
-  }
-}
-
-/* 📱💻 Tablets (telas médias) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .alerta {
-    width: 60%;
-    font-size: 17px;
-    padding: 14px;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-/* Efeito de piscar */
+/* ================ 
+Animação do alerta 
+=================== */
 @keyframes piscar {
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  50% { opacity: 0; }
-  75% { opacity: 1; }
-  100% { opacity: 0; }
-}
+  0% {
+    opacity: 0;
+  }
 
-/* Estilo do botão de fechar (não será mais utilizado) */
+  25% {
+    opacity: 1;
+  }
 
-/*body do meu portfolio*/
-#logo-body {
-  background-image: url('../img/3607424.jpg'); /* Imagem de fundo do corpo */
-  background-size: cover; /* Garante que a imagem cubra todo o fundo */
-  background-position: center; /* Centraliza a imagem de fundo */
-  background-attachment: fixed; /* Mantém a imagem fixa durante o scroll */
-  background-repeat: no-repeat; /* Evita que a imagem se repita */
-  height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
-  justify-content: center; /* Centraliza verticalmente */
-}
+  50% {
+    opacity: 0;
+  }
 
-/* ===== Carrossel ===== */
-#carouselExampleIndicators {
-  max-width: 900px;              /* largura máxima do carrossel */
-  margin: 40px auto 60px auto;   /* centraliza e adiciona espaçamento */
-  border-radius: 10px;           /* cantos arredondados */
-  overflow: hidden;              /* evita que imagens escapem */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* sombra mais suave */
-}
+  75% {
+    opacity: 1;
+  }
 
-/* Imagens do carrossel */
-.carousel-inner img {
-  width: 100%;          /* ocupa toda a largura disponível */
-  height: 100%;        /* altura fixa menor */
-  object-fit: cover;    /* ajusta a imagem sem distorcer */
-  border-radius: 0;     /* opcional: mantém os cantos retos */
-}
-
-/* Ajuste opcional para telas menores */
-@media (max-width: 768px) {
-  .carousel-inner img {
-    height: 300px; /* altura reduzida no celular */
+  100% {
+    opacity: 0;
   }
 }
 
+/* =========================================================
+   BODY / FUNDO DO PORTFÓLIO
+   ========================================================= */
+#logo-body {
+  height: 100vh;
 
-/* Teia */
-#teia {
-  position: fixed; /* Fixa a teia na tela */
-  top: 0; /* Posiciona no canto superior esquerdo */
-  left: 0; /* Posiciona no canto superior esquerdo */
-  width: 100%; /* Ocupa toda a largura */
-  height: 100%; /* Ocupa toda a tela */
-  z-index: -1; /* Fica no fundo */
-  pointer-events: none; /* Deixa os cliques passarem */
-  background: transparent; /* Fundo transparente */
+  background-image: url('../img/3607424.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  justify-content: center;
 }
 
+/* =========================================================
+   CARROSSEL
+   ========================================================= */
+#carouselExampleIndicators {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  border-radius: 10px;
+  overflow: hidden;
 
-/* Estilo do formulário de contato */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================================================
+   TEIA (BACKGROUND FIXO)
+   ========================================================= */
+#teia {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  pointer-events: none;
+
+  background: transparent;
+}
+
+/* =========================================================
+   FORMULÁRIO DE CONTATO
+   ========================================================= */
 #contato form {
   background-color: #2b2b2b;
   border: 1px solid #c8c8c8;
@@ -135,7 +143,212 @@
   transition: 0.2s ease;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+/* =========================================================
+   BOTÃO VOLTAR AO TOPO
+   ========================================================= */
+#botao-topo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
 }
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/* 📱 Smartphones */
+@media (max-width: 600px) {
+  .alerta {
+    width: 85%;
+    font-size: 16px;
+    padding: 12px;
+
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* 📱 Smartphones */
+@media (max-width: 400px) {
+  .alerta {
+    width: 85%; /* Ajuste da largura para telas muito pequenas */
+    font-size: 12px; /* Ajuste do tamanho da fonte para telas muito pequenas */
+    padding: 12px; /* Ajuste do padding para telas muito pequenas */
+
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* 📱💻 Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .alerta {
+    width: 70%;
+    font-size: 17px;
+    padding: 14px;
+
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* 📱 Ajuste do carrossel em telas menores */
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 300px;
+  }
+}
+
+
+/* =========================================================
+   Header Liguagens
+   ========================================================= */
+.liguagem li a img {
+  transition: transform 0.5s ease, filter 0.5s ease;
+  /* Transição suave para transformações */
+  cursor: pointer;
+  /* Cursor de ponteiro ao passar sobre a imagem */
+}
+
+.liguagem li a img:hover {
+  transform: scale(1.3) rotate(10deg);
+  /* Aumenta o tamanho e rotaciona levemente */
+  filter: brightness(1.2);
+  /* Aumenta o brilho da imagem */
+}
+
+
+/* ==============================
+   FORMULÁRIO DE CONTATO
+============================== */
+
+/* Container geral do formulário */
+#contato {
+  /* fundo escuro da seção */
+  padding: 60px 0;
+}
+
+/* Formulário */
+#contato {
+  padding: 30px;
+  border-radius: 15px;
+}
+
+/* Labels */
+#contato label {
+  font-weight: 500;
+  color: #f5f5f5;
+}
+
+/* Inputs e textarea */
+#contato input,
+#contato textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder */
+#contato input::placeholder,
+#contato textarea::placeholder {
+  color: #aaa;
+}
+
+/* Foco nos campos */
+#contato input:focus,
+#contato textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+  /* azul destacado */
+  box-shadow: 0 0 8px #0d6efd;
+  /* leve brilho */
+  background-color: #2a2a2a;
+}
+
+/* Botão de envio */
+#contato button {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover do botão */
+#contato button:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.5);
+}
+
+/* Responsivo: reduz padding em telas pequenas */
+@media (max-width: 768px) {
+  #contato {
+    padding: 20px;
+  }
+}
+
+/* =========================================================
+   Navbar Links
+   ========================================================= */
+.navbar .nav-link {
+  margin: 5px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.navbar .nav-link.active {
+  color: #fff !important;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.6);
+}
+
+.navbar .nav-link:hover {
+  color: #fff !important;
+  border: 2px solid #0d6efd;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.5);
+}
+
+/* =========================================================
+   Navbar Brand
+   ========================================================= */
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ca275b !important;
+  padding: 5px;
+  border-radius: 5px;
+} 
+
+.navbar-brand:hover {
+  color: #fff !important;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(13, 110, 253, 0.7);
+
+}
+
+
+
+
+/* =========================================================
+   Fim do CSS
+   ========================================================= */

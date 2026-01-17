@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .map(cb => document.querySelector(`label[for="${cb.id}"]`)?.innerText)
         .filter(Boolean);
 
-      const url = new URL("facapedido.html", window.location.origin);
+      const url = new URL("siteacai/facapedido.html", window.location.origin);
       url.searchParams.set("produto", produtoNomeEl.innerText);
       url.searchParams.set("quantidade", qtdEl.value);
       url.searchParams.set("tamanho", tamanhoEl.selectedOptions[0].text);
@@ -168,23 +168,64 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-  /* ===============================
-     BOTÃO SUBIR NO SITE
-  =============================== */
-  window.addEventListener("scroll", function() {
-    const backToTop = document.getElementById("backToTop");
-    if (!backToTop) return;
+/* ===============================
+    ENVIO PARA WHATSAPP
+ ================================ */
+const pedidoForm = document.getElementById("pedidoForm");
+pedidoForm.addEventListener("submit", function (e) {
+  e.preventDefault(); // Evita reload da página
 
-    if (window.scrollY > 200) {
-      backToTop.style.display = "block";
-    } else {
-      backToTop.style.display = "none";
-    }
-  });
+  // Pegando todos os campos
+  const nome = document.getElementById("nome")?.value || "";
+  const telefone = document.getElementById("telefone")?.value || "";
+  const endereco = document.getElementById("endereco")?.value || "";
+  const bairro = document.getElementById("bairro")?.value || "";
+  const pagamento = document.getElementById("pagamento")?.value || "";
+  const pedido = document.getElementById("pedido")?.value || "";
+  const total = document.getElementById("total")?.value || "";
 
+  const acompanhamentos = Array.from(document.querySelectorAll(".acompanhamento:checked"))
+    .map(cb => cb.value)
+    .join(", ") || "Nenhum";
+
+  // Monta a mensagem
+  let mensagem = `📦 *Novo Pedido*\n\n`;
+  mensagem += `👤 *Nome:* ${nome}\n`;
+  mensagem += `📱 *Telefone / WhatsApp:* ${telefone}\n`;
+  mensagem += `🏠 *Endereço:* ${endereco}\n`;
+  mensagem += `🗺️ *Bairro:* ${bairro}\n`;
+  mensagem += `🍓 *Acompanhamentos:* ${acompanhamentos}\n`;
+  mensagem += `💰 *Total:* ${total}\n`;
+  mensagem += `💳 *Forma de Pagamento:* ${pagamento}\n`;
+  mensagem += `📝 *Pedido:* ${pedido}`;
+
+  // Número do WhatsApp (adicione seu número com DDI e DDD)
+  const numeroWhats = "5561994298990";
+
+  // Link do WhatsApp
+  const urlWhats = `https://api.whatsapp.com/send?phone=${numeroWhats}&text=${encodeURIComponent(mensagem)}`;
+
+  // Abre o WhatsApp
+  window.open(urlWhats, "_blank");
+});
+
+/* ===============================
+   BOTÃO SUBIR NO SITE
+=============================== */
+window.addEventListener("scroll", function () {
   const backToTop = document.getElementById("backToTop");
-  if (backToTop) {
-    backToTop.addEventListener("click", function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+  if (!backToTop) return;
+
+  if (window.scrollY > 200) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
   }
+});
+
+const backToTop = document.getElementById("backToTop");
+if (backToTop) {
+  backToTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
