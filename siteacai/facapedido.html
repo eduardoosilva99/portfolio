@@ -30,12 +30,12 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Menu principal">
     <div class="container">
-      <a class="nav-link" href="#home">
-        <img src="img/download.jpeg" alt="Logo Açai do Bob" width="40" height="40" style="border-radius: 20px;">
+      <a class="" href="index.html">
+        <img src="img/download.jpeg" alt="Logo Açaí do Bob" width="40" height="40" style="border-radius: 20px;">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-label="Abrir menu">
+        aria-label="Abrir menu de navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -45,8 +45,7 @@
           <li class="nav-item"><a class="nav-link" href="cardapio.html">Cardápio</a></li>
           <li class="nav-item"><a class="nav-link" href="facapedido.html">Faça seu Pedido</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="faleconosco.html"
-              style="background: rgb(54, 17, 88); border-radius: 5px;">
+            <a class="nav-link" href="faleconosco.html" style="background: rgb(54, 17, 88); border-radius: 5px;">
               Fale Conosco
             </a>
           </li>
@@ -54,6 +53,7 @@
       </div>
     </div>
   </nav>
+
 
   <!-- Formulário -->
   <section id="facapedido" class="p-5">
@@ -98,32 +98,28 @@
               </legend>
 
               <div class="form-check">
-                <input class="form-check-input acompanhamento" type="checkbox"
-                  value="Leite condensado" id="leitecondensado" checked>
+                <input class="form-check-input acompanhamento" type="checkbox" value="Leite condensado"
+                  id="leitecondensado" checked>
                 <label class="form-check-label" for="leitecondensado">Leite condensado</label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input acompanhamento" type="checkbox"
-                  value="Leite em pó" id="leitepo">
+                <input class="form-check-input acompanhamento" type="checkbox" value="Leite em pó" id="leitepo">
                 <label class="form-check-label" for="leitepo">Leite em pó</label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input acompanhamento" type="checkbox"
-                  value="Paçoca" id="pacoca">
+                <input class="form-check-input acompanhamento" type="checkbox" value="Paçoca" id="pacoca">
                 <label class="form-check-label" for="pacoca">Paçoca</label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input acompanhamento" type="checkbox"
-                  value="Granola" id="granola">
+                <input class="form-check-input acompanhamento" type="checkbox" value="Granola" id="granola">
                 <label class="form-check-label" for="granola">Granola</label>
               </div>
 
               <div class="form-check">
-                <input class="form-check-input acompanhamento" type="checkbox"
-                  value="Amendoim" id="amendoim">
+                <input class="form-check-input acompanhamento" type="checkbox" value="Amendoim" id="amendoim">
                 <label class="form-check-label" for="amendoim">Amendoim</label>
               </div>
 
@@ -153,11 +149,11 @@
               <textarea class="form-control" id="pedido" rows="4" required></textarea>
             </div>
 
-            <div class="d-grid">
+            <form id="pedidoForm">
               <button type="submit" class="btn btn-acai">
                 Enviar Pedido pelo WhatsApp
               </button>
-            </div>
+            </form>
 
           </form>
         </div>
@@ -165,77 +161,78 @@
     </div>
   </section>
 
-     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
 
-                <!-- Sobre -->
-                <div class="col-md-2 mb-2">
-                    <h5>AÇAÍ DO BOB</h5>
-                    <p>O melhor açaí da cidade, feito com ingredientes naturais e muito sabor.</p>
-                </div>
-
-                <!-- Links -->
-                <div class="col-md-2 mb-2">
-                    <h5>Links rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="cardapio.html" class="text-light text-decoration-none">Cardápio</a></li>
-                        <li><a href="facapedido.html" class="text-light text-decoration-none">Faça seu pedido</a></li>
-                        <li><a href="faleconosco.html" class="text-light text-decoration-none">Fale conosco</a></li>
-                    </ul>
-                </div>
-
-
-                <!-- Redes Sociais -->
-                <div class="col-md-2 mb-2">
-                    <h5>Redes Sociais</h5>
-                    <ul class="list-unstyled text-center d-flex gap-3">
-                        <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
-                                    class="app-modal-icon__icon-image"
-                                    srcset="https://img.icons8.com/?size=48&amp;id=uLWV5A9vXIPu&amp;format=png 1x, https://img.icons8.com/?size=96&amp;id=uLWV5A9vXIPu&amp;format=png 2x"
-                                    alt="Facebook Novo" width="40" height="40"></a></li>
-                        <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
-                                    class="app-modal-icon__icon-image"
-                                    srcset="https://img.icons8.com/?size=48&amp;id=Xy10Jcu1L2Su&amp;format=png 1x, https://img.icons8.com/?size=96&amp;id=Xy10Jcu1L2Su&amp;format=png 2x"
-                                    alt="Instagram" width="40" height="40"></a></li>
-                        <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
-                                    class="app-modal-icon__icon-image"
-                                    srcset="https://img.icons8.com/?size=50&amp;id=phOKFKYpe00C&amp;format=png 1x, https://img.icons8.com/?size=100&amp;id=phOKFKYpe00C&amp;format=png 2x"
-                                    alt="Twitter" width="40" height="40"></a></li>
-                    </ul>
-                </div>
-
-                <!-- Contato -->
-                <div class="col-md-3 mb-2">
-                    <h5>Contato</h5>
-                    <p>📍 Sq16, quadra 05 Loja 54 - D - Centro, Cidade Ocidental - GO, 72880-594</p>
-                    <p>📞 (11) 99999-9999</p>
-                    <p>📧 contato@meuacai.com</p>
-                </div>
-
-                <!-- Voltar ao topo -->
-                <button id="backToTop" class="btn btn-primary" title="Voltar ao topo">
-                    <i class="fas fa-arrow-up"></i>
-                </button>
-
-            </div>
-
-            <hr class="border-light">
-
-            <!-- Copyright -->
-            <div class="text-center pb-3" style="color: white;">
-                <p class="mb-0">© <span id="ano-atual"></span> Eduardo Silva. Todos os direitos reservados.</p>
-                <p class="mb-0">Desenvolvido com 💙 por Eduardo Silva</p>
-                <p class="mb-0">Este site é pessoal e não está vinculado a nenhuma empresa.</p>
-            </div>
+        <!-- Sobre -->
+        <div class="col-md-2 mb-2">
+          <h5>AÇAÍ DO BOB</h5>
+          <p>O melhor açaí da cidade, feito com ingredientes naturais e muito sabor.</p>
         </div>
-    </footer>
+
+        <!-- Links -->
+        <div class="col-md-2 mb-2">
+          <h5>Links rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="cardapio.html" class="text-light text-decoration-none">Cardápio</a></li>
+            <li><a href="facapedido.html" class="text-light text-decoration-none">Faça seu pedido</a></li>
+            <li><a href="faleconosco.html" class="text-light text-decoration-none">Fale conosco</a></li>
+          </ul>
+        </div>
+
+
+        <!-- Redes Sociais -->
+        <div class="col-md-2 mb-2">
+          <h5>Redes Sociais</h5>
+          <ul class="list-unstyled text-center d-flex gap-3">
+            <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
+                  class="app-modal-icon__icon-image"
+                  srcset="https://img.icons8.com/?size=48&amp;id=uLWV5A9vXIPu&amp;format=png 1x, https://img.icons8.com/?size=96&amp;id=uLWV5A9vXIPu&amp;format=png 2x"
+                  alt="Facebook Novo" width="40" height="40"></a></li>
+            <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
+                  class="app-modal-icon__icon-image"
+                  srcset="https://img.icons8.com/?size=48&amp;id=Xy10Jcu1L2Su&amp;format=png 1x, https://img.icons8.com/?size=96&amp;id=Xy10Jcu1L2Su&amp;format=png 2x"
+                  alt="Instagram" width="40" height="40"></a></li>
+            <li><a href="#" class="text-light text-decoration-none"><img data-v-e883b1bf=""
+                  class="app-modal-icon__icon-image"
+                  srcset="https://img.icons8.com/?size=50&amp;id=phOKFKYpe00C&amp;format=png 1x, https://img.icons8.com/?size=100&amp;id=phOKFKYpe00C&amp;format=png 2x"
+                  alt="Twitter" width="40" height="40"></a></li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div class="col-md-3 mb-2">
+          <h5>Contato</h5>
+          <p>📍 Sq16, quadra 05 Loja 54 - D - Centro, Cidade Ocidental - GO, 72880-594</p>
+          <p>📞 (11) 99999-9999</p>
+          <p>📧 contato@meuacai.com</p>
+        </div>
+
+        <!-- Voltar ao topo -->
+        <button id="backToTop" class="btn btn-primary" title="Voltar ao topo">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+
+      </div>
+
+      <hr class="border-light">
+
+      <!-- Copyright -->
+      <div class="text-center pb-3" style="color: white;">
+        <p class="mb-0">© <span id="ano-atual"></span> Eduardo Silva. Todos os direitos reservados.</p>
+        <p class="mb-0">Desenvolvido com 💙 por Eduardo Silva</p>
+        <p class="mb-0">Este site é pessoal e não está vinculado a nenhuma empresa.</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
+
 </html>

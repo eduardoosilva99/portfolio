@@ -168,46 +168,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-/* ===============================
-    ENVIO PARA WHATSAPP
- ================================ */
 const pedidoForm = document.getElementById("pedidoForm");
-pedidoForm.addEventListener("submit", function (e) {
-  e.preventDefault(); // Evita reload da página
 
-  // Pegando todos os campos
-  const nome = document.getElementById("nome")?.value || "";
-  const telefone = document.getElementById("telefone")?.value || "";
-  const endereco = document.getElementById("endereco")?.value || "";
-  const bairro = document.getElementById("bairro")?.value || "";
-  const pagamento = document.getElementById("pagamento")?.value || "";
-  const pedido = document.getElementById("pedido")?.value || "";
-  const total = document.getElementById("total")?.value || "";
+if (pedidoForm) {
+  pedidoForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  const acompanhamentos = Array.from(document.querySelectorAll(".acompanhamento:checked"))
-    .map(cb => cb.value)
-    .join(", ") || "Nenhum";
+    const nome = document.getElementById("nome")?.value || "";
+    const telefone = document.getElementById("telefone")?.value || "";
+    const endereco = document.getElementById("endereco")?.value || "";
+    const bairro = document.getElementById("bairro")?.value || "";
+    const pagamento = document.getElementById("pagamento")?.value || "";
+    const pedido = document.getElementById("pedido")?.value || "";
+    const total = document.getElementById("total")?.value || "";
 
-  // Monta a mensagem
-  let mensagem = `📦 *Novo Pedido*\n\n`;
-  mensagem += `👤 *Nome:* ${nome}\n`;
-  mensagem += `📱 *Telefone / WhatsApp:* ${telefone}\n`;
-  mensagem += `🏠 *Endereço:* ${endereco}\n`;
-  mensagem += `🗺️ *Bairro:* ${bairro}\n`;
-  mensagem += `🍓 *Acompanhamentos:* ${acompanhamentos}\n`;
-  mensagem += `💰 *Total:* ${total}\n`;
-  mensagem += `💳 *Forma de Pagamento:* ${pagamento}\n`;
-  mensagem += `📝 *Pedido:* ${pedido}`;
+    const acompanhamentos = Array.from(
+      document.querySelectorAll(".acompanhamento:checked")
+    ).map(cb => cb.value).join(", ") || "Nenhum";
 
-  // Número do WhatsApp (adicione seu número com DDI e DDD)
-  const numeroWhats = "5561994298990";
+    let mensagem = `📦 *Novo Pedido*\n\n`;
+    mensagem += `👤 *Nome:* ${nome}\n`;
+    mensagem += `📱 *Telefone:* ${telefone}\n`;
+    mensagem += `🏠 *Endereço:* ${endereco}\n`;
+    mensagem += `🗺️ *Bairro:* ${bairro}\n`;
+    mensagem += `🍓 *Acompanhamentos:* ${acompanhamentos}\n`;
+    mensagem += `💰 *Total:* ${total}\n`;
+    mensagem += `💳 *Pagamento:* ${pagamento}\n`;
+    mensagem += `📝 *Pedido:* ${pedido}`;
 
-  // Link do WhatsApp
-  const urlWhats = `https://api.whatsapp.com/send?phone=${numeroWhats}&text=${encodeURIComponent(mensagem)}`;
+    const numeroWhats = "5561994298990";
+    const urlWhats = `https://api.whatsapp.com/send?phone=${numeroWhats}&text=${encodeURIComponent(mensagem)}`;
 
-  // Abre o WhatsApp
-  window.open(urlWhats, "_blank");
-});
+    window.open(urlWhats, "_blank");
+  });
+}
 
 /* ===============================
    BOTÃO SUBIR NO SITE
