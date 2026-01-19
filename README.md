@@ -37,7 +37,7 @@ Aqui você encontrará alguns dos meus projetos pessoais e profissionais desenvo
 ## 📸 Prévia
 
 <p align="center">
-  <img alt="Prévia do portfólio" src="images/port.jpg" width="90%">
+  <img alt="Prévia do portfólio" src="img/Captura de tela de 2026-01-19 18-38-02.png" width="90%">
 </p>
 
 ---
