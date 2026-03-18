@@ -19,7 +19,7 @@ Aqui você encontrará alguns dos meus projetos pessoais e profissionais desenvo
 ## 🛠️ Tecnologias & Ferramentas
 
 - **Front-End**: HTML, CSS, JavaScript, React  
-- **Back-End**: PHP, Node.js  
+- **Back-End**: PHP, Python, Node.js  
 - **Banco de Dados**: MySQL  
 - **Ferramentas**: Git, GitHub, VS Code, Figma  
 - **Estudando**: Java, Power BI, TypeScript
