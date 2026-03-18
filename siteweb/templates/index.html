@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Site Web</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<style>
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background-image:url(https://t3.ftcdn.net/jpg/14/96/26/74/360_F_1496267454_3uR9VUmVicNObdYJA5Uv6mF755QINXfg.jpg);
+background-size:cover;
+background-position:center;
+}
+
+.login-container{
+background:white;
+width:100%;
+max-width:900px;
+height:550px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+overflow:hidden;
+display:flex;
+transition:0.3s;
+}
+
+.login-container:hover{
+transform:scale(1.01);
+}
+
+.form-label{
+font-weight:bold;
+}
+
+.form-control{
+border-radius:5px;
+border:1px solid #007bff;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+<!-- imagem -->
+
+<div class="col-md-6 d-none d-md-block p-0">
+
+<img
+src="https://www.echodumardi.com/wp-content/uploads/2020/09/3672791Télétravail-©-freepik.com_.jpg"
+class="img-fluid h-100 w-100"
+style="object-fit:cover;">
+
+</div>
+
+<!-- formulário -->
+
+<div class="col-md-6 p-4 d-flex flex-column justify-content-center">
+
+<img
+src="https://img.redro.pl/plakaty/login-icon-vector-user-symbol-simple-linear-pictogram-user-interface-account-log-in-400-250244156.jpg"
+class="img-fluid mb-3"
+style="max-width:80px;align-self:center;">
+
+<h2 class="text-center mb-2">Login</h2>
+
+<form method="POST" action="/login" id="loginForm">
+
+<div class="mb-3">
+
+<label class="form-label">Usuário</label>
+
+<input
+type="text"
+id="usuario"
+name="usuario"
+class="form-control"
+placeholder="Digite seu usuário"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label class="form-label">Senha</label>
+
+<input
+type="password"
+id="senha"
+name="senha"
+class="form-control"
+placeholder="Digite sua senha"
+required>
+
+<a href="#" class="text-decoration-none mt-2 d-block">
+Esqueci minha senha
+</a>
+
+</div>
+
+<button type="submit" class="btn btn-primary w-100">
+Entrar
+</button>
+
+<a href="/cadastro" class="d-block text-decoration-none text-center mt-2">
+Criar conta
+</a>
+
+</form>
+
+<div id="mensagem" class="mt-3 text-center"></div>
+
+<!-- login Google -->
+
+<div id="g_id_onload"
+data-client_id="955828976402-g6fi2ukuml5f32pott70o77gicehk9nk.apps.googleusercontent.com"
+data-callback="handleCredentialResponse"
+data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin mt-3 d-flex justify-content-center"
+data-type="standard"
+data-theme="outline"
+data-size="large">
+</div>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+<script>
+
+function handleCredentialResponse(response){
+
+const data=parseJwt(response.credential)
+
+document.getElementById("mensagem").innerHTML =
+"Bem-vindo, " + data.name + " (" + data.email + ")"
+
+}
+
+function parseJwt(token){
+
+var base64Url = token.split('.')[1]
+
+var base64 = base64Url.replace(/-/g,'+').replace(/_/g,'/')
+
+var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c){
+
+return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+
+}).join(''))
+
+return JSON.parse(jsonPayload)
+
+}
+
+function logout(){
+
+google.accounts.id.disableAutoSelect()
+
+document.getElementById("mensagem").innerHTML = "Logout realizado."
+
+}
+
+</script>
+
+</body>
+</html>

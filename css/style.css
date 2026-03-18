@@ -12,16 +12,18 @@ img {
 }
 
 /* =========================================================
-   ALERTA
+   ALERTA (CORRIGIDO 🔥)
    ========================================================= */
 .alerta {
-  position: absolute;
-  top: 64%;
+  position: absolute; /* 🔥 centraliza em qualquer tela */
+  top: 65%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 35%;
+  transform: translate(-50%, -50%);
 
-  padding: 10px;
+  width: 90%;
+  max-width: 400px;
+
+  padding: 12px;
   text-align: center;
 
   background-color: #ffcc00;
@@ -32,8 +34,8 @@ img {
   line-height: 1.2;
 
   border: 2px solid #ff9900;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 
   z-index: 1000;
   opacity: 0;
@@ -43,28 +45,14 @@ img {
 }
 
 /* ================ 
-Animação do alerta 
+   Animação do alerta 
 =================== */
 @keyframes piscar {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  75% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 /* =========================================================
@@ -155,97 +143,84 @@ Animação do alerta
 }
 
 /* =========================================================
-   RESPONSIVIDADE
+   RESPONSIVIDADE (AGORA LIMPA ✅)
    ========================================================= */
 
-/* 📱 Smartphones */
+/* 📱 Celular */
 @media (max-width: 600px) {
   .alerta {
-    width: 85%;
-    font-size: 16px;
-    padding: 12px;
-
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 90%;
+    font-size: 14px;
   }
 }
 
-/* 📱 Smartphones */
-@media (max-width: 400px) {
-  .alerta {
-    width: 85%; /* Ajuste da largura para telas muito pequenas */
-    font-size: 12px; /* Ajuste do tamanho da fonte para telas muito pequenas */
-    padding: 12px; /* Ajuste do padding para telas muito pequenas */
-
-    top: 83%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-/* 📱💻 Tablets */
+/* 📱💻 Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
   .alerta {
     width: 70%;
-    font-size: 17px;
-    padding: 14px;
-
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 16px;
   }
 }
 
-/* 📱 Ajuste do carrossel em telas menores */
+/* 💻 PC */
+@media (min-width: 1025px) {
+  .alerta {
+    width: 400px;
+    font-size: 18px;
+  }
+}
+
+/* 📱 Ajuste do carrossel */
 @media (max-width: 768px) {
   .carousel-inner img {
     height: 300px;
   }
 }
 
-
 /* =========================================================
-   Header Liguagens
+   Header Linguagens
    ========================================================= */
 .liguagem li a img {
   transition: transform 0.5s ease, filter 0.5s ease;
-  /* Transição suave para transformações */
   cursor: pointer;
-  /* Cursor de ponteiro ao passar sobre a imagem */
 }
 
 .liguagem li a img:hover {
   transform: scale(1.3) rotate(10deg);
-  /* Aumenta o tamanho e rotaciona levemente */
   filter: brightness(1.2);
-  /* Aumenta o brilho da imagem */
 }
 
 
-/* ==============================
-   FORMULÁRIO DE CONTATO
-============================== */
+/* =========================================================
+   Butões de contato
+   ========================================================= */
+#buttoncontato {
+  transition: transform 0.5s ease, filter 0.5s ease;
+  cursor: pointer;
+}
 
-/* Container geral do formulário */
+#buttoncontato:hover {
+  transform: scale(1.05);
+  filter: brightness(1.5);
+}
+
+/* =========================================================
+   FORMULÁRIO COMPLETO
+   ========================================================= */
 #contato {
-  /* fundo escuro da seção */
   padding: 60px 0;
 }
 
-/* Formulário */
 #contato {
   padding: 30px;
   border-radius: 15px;
 }
 
-/* Labels */
 #contato label {
   font-weight: 500;
   color: #f5f5f5;
 }
 
-/* Inputs e textarea */
 #contato input,
 #contato textarea {
   width: 100%;
@@ -260,24 +235,14 @@ Animação do alerta
   transition: all 0.3s ease;
 }
 
-/* Placeholder */
-#contato input::placeholder,
-#contato textarea::placeholder {
-  color: #aaa;
-}
-
-/* Foco nos campos */
 #contato input:focus,
 #contato textarea:focus {
   outline: none;
   border-color: #0d6efd;
-  /* azul destacado */
   box-shadow: 0 0 8px #0d6efd;
-  /* leve brilho */
   background-color: #2a2a2a;
 }
 
-/* Botão de envio */
 #contato button {
   background-color: #0d6efd;
   color: #fff;
@@ -290,22 +255,14 @@ Animação do alerta
   transition: all 0.3s ease;
 }
 
-/* Hover do botão */
 #contato button:hover {
   background-color: #0b5ed7;
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(13, 110, 253, 0.5);
 }
 
-/* Responsivo: reduz padding em telas pequenas */
-@media (max-width: 768px) {
-  #contato {
-    padding: 20px;
-  }
-}
-
 /* =========================================================
-   Navbar Links
+   Navbar
    ========================================================= */
 .navbar .nav-link {
   margin: 5px;
@@ -330,25 +287,16 @@ Animação do alerta
 /* =========================================================
    Navbar Brand
    ========================================================= */
-
 .navbar-brand {
   font-weight: 700;
   font-size: 24px;
   color: #ca275b !important;
   padding: 5px;
   border-radius: 5px;
-} 
+}
 
 .navbar-brand:hover {
   color: #fff !important;
   font-weight: 600;
   text-shadow: 0 0 5px rgba(13, 110, 253, 0.7);
-
 }
-
-
-
-
-/* =========================================================
-   Fim do CSS
-   ========================================================= */
