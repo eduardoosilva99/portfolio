@@ -29,7 +29,7 @@ Aqui você encontrará alguns dos meus projetos pessoais e profissionais desenvo
 ## 📬 Contato
 
 - 📧 Email: **eduardocristoreidudu@gmail.com**  
-- 💼 LinkedIn: [linkedin.com/in/eduardo-o-silva-4471aa235](https://www.linkedin.com/in/eduardo-o-silva-4471aa235/)  
+- 💼 LinkedIn: [linkedin.com/in/eduardo-o-silva-4471aa235](https://www.linkedin.com/in/eduardo-silva-4471aa235/)  
 - 💻 GitHub: [github.com/eduardoosilva99](https://github.com/eduardoosilva99)
 
 ---
