@@ -134,12 +134,25 @@ img {
 /* =========================================================
    BOTÃO VOLTAR AO TOPO
    ========================================================= */
-#botao-topo {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
+#backToTop {
+    position: fixed;
+    bottom: 40px; /* Aumentei a distância do rodapé para evitar sobreposição */
+    right: 20px; /* Aumentei a distância da borda direita para melhor visibilidade */
+    z-index: 9999; /* Garante que o botão fique acima de outros elementos */
+    width: 50px; /* Tamanho do botão */
+    height: 50px; /* Tamanho do botão */
+    border-radius: 50%; /* Deixa o botão totalmente redondo */
+    display: none;      /* O JavaScript vai alternar para 'flex' ou 'block' */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar o botão */
+    transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+    cursor: pointer; /* Cursor de mão para indicar que é clicável */
+}
+/* Efeito Hover (Passar o mouse) */
+#backToTop:hover {
+    transform: translateY(-5px); /* Move o botão levemente para cima */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* =========================================================

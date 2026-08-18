@@ -95,19 +95,24 @@ function iniciarTeia() {
   });
 }
 
-// 4️⃣ Configura o botão voltar ao topo
-function configurarBotaoTopo() {
-  const botaoTopo = document.getElementById("backToTop");
-  if (!botaoTopo) return;
+window.addEventListener('scroll', function() {
+    const btn = document.getElementById('backToTop');
+    // Mostra o botão após rolar 100 pixels para baixo
+    if (window.scrollY > 100) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+});
 
-  window.addEventListener("scroll", () => {
-    botaoTopo.style.display = window.scrollY > 200 ? "block" : "none";
-  });
-
-  botaoTopo.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-}
+document.getElementById('backToTop').addEventListener('click', function(e) {
+    e.preventDefault();
+    // Faz a rolagem suave até o topo da página
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 // 5️⃣ Configura envio de formulário para Formspree
 function configurarFormulario() {
